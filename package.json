@@ -1,0 +1,21 @@
+{
+  "name": "tsdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "webpack": "webpack --mode development",
+    "webpack:w": "webpack --mode development --watch",
+    "start": "webpack serve --mode development --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "webpack": "^5.79.0"
+  }
+}
