@@ -57,9 +57,32 @@ function newMulti(small, big) {
     }
     console.log("Multiplication result : " + sum);
 }
-// Now execute output of functions
+// T:6 - Factorial of N
+function factorial(input) {
+    var n = 1;
+    while (input > 1) {
+        n *= input;
+        input--;
+    }
+    console.log("Factorial : " + n);
+}
+// T:7 - Longest text in string arrau
+function longestText(input) {
+    var longText = "";
+    input.forEach(function (element) {
+        if (element.length > longText.length) {
+            longText = element;
+        }
+    });
+    console.log("Longest Text : " + longText);
+}
+/*
+ Now execute output of functions
+ */
 //sumOfAll([2,3,4,5,6,7,7,8]);
 //reverse("tnahsarp");
 //secondLargest([2,43,22,67,21]);
 //charCount(['a','b','c','a','e','f','e','a','c'])
-multiply(30, 4);
+//multiply(3,8);
+//factorial(6);
+longestText(["abc", "sdad", "sd", "yadav", "prashant"]);
