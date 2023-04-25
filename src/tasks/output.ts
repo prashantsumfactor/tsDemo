@@ -18,7 +18,7 @@ function reverse(input:string){
     console.log("Reverse of text : "+newText);
 }
 
-// T:3 - Reverse a string
+// T:3 - Second largest in array
 function secondLargest(input:number[]){
     let max :number = 0;
     let maxLeft : number= 0;
@@ -32,7 +32,7 @@ function secondLargest(input:number[]){
     console.log("Second largest number : "+ maxLeft);
 }
 
-// T:4 - Reverse a string
+// T:4 - Char count in a array
 function charCount(input:string[]){
     var charLis = new Map<string, number>();
     input.forEach(element => {
@@ -84,6 +84,18 @@ function longestText(input:string[]){
     console.log("Longest Text : " + longText);
 }
 
+// T:8 - Common item arraay
+function commonArray(arr1:number[],arr2:number[]){
+    const minLength = (arr1.length < arr2.length) ? arr1.length : arr2.length;
+    let common : number[]=[]
+    for(let i=0;i<minLength; i++){
+        if(arr2.includes(arr1[i])){
+            common.push(arr1[i]);
+        }
+    }
+    console.log("Common item array : "+ common)
+}
+
 
 /*
  Now execute output of functions
@@ -97,3 +109,4 @@ function longestText(input:string[]){
 //multiply(3,8);
 //factorial(6);
 //longestText(["abc","sdad","sd","yadav","prashant"]);
+commonArray([1,2,3,4],[4,5,6,1,7,2]);
