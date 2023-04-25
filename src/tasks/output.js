@@ -87,6 +87,29 @@ function commonArray(arr1, arr2) {
     }
     console.log("Common item array : " + common);
 }
+// T:9 - Common item arraay
+function isPallindrom(input) {
+    var frontIndex = 0;
+    var backIndex = input.length - 1;
+    while (frontIndex < backIndex) {
+        if (input.charAt(frontIndex) !== input.charAt(backIndex)) {
+            return false;
+        }
+        frontIndex++;
+        backIndex--;
+    }
+    return true;
+}
+// T:10 - Even number array
+function evenItem(input) {
+    var evenArr = [];
+    input.forEach(function (element) {
+        if (element % 2 == 0) {
+            evenArr.push(element);
+        }
+    });
+    console.log("Even item arr : " + evenArr);
+}
 /*
  Now execute output of functions
  */
@@ -97,4 +120,6 @@ function commonArray(arr1, arr2) {
 //multiply(3,8);
 //factorial(6);
 //longestText(["abc","sdad","sd","yadav","prashant"]);
-commonArray([1, 2, 3, 4], [4, 5, 6, 1, 7, 2]);
+//commonArray([1,2,3,4],[4,5,6,1,7,2]);
+//console.log(isPallindrom("abcdcba"));
+evenItem([4, 5, 6, 1, 7, 2, 19, 8]);
